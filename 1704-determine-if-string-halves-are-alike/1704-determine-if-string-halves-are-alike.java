@@ -8,17 +8,17 @@ class Solution {
         s.getChars(midpoint, length, b, 0);
         int count1=0;
         int count2=0;
-        char[] vow = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
+        char[] vow = {'a', 'e', 'i', 'o', 'u'};
         for(int i=0; i<vow.length; i++){
             for(int j=0; j<b.length; j++){
-                if(vow[i]==b[j]){
+                if(vow[i]==Character.toLowerCase(b[j])){
                     count1++;
                 }
             }  
         }
          for(int i=0; i<vow.length; i++){
             for(int j=0; j<a.length; j++){
-                if(vow[i]==a[j]){
+                if(vow[i]==Character.toLowerCase(a[j])){
                     count2++;
                 }
             }  
