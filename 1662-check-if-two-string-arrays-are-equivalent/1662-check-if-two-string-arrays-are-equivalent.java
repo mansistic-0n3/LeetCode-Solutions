@@ -8,10 +8,7 @@ class Solution {
         }
         for(int i=0; i<word2.length; i++){
             b.append(word2[i]);
-        }
-        System.out.println(a);
-        System.out.println(b);
-        
+        }        
         return a.toString().equals(b.toString());
     }
 }
