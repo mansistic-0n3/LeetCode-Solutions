@@ -8,7 +8,6 @@ class Solution {
             }
         }
         List<Integer> l = new ArrayList<>(uniqueSet);
-        System.out.println(l);
         Collections.sort(l);
         for(int i=0; i<l.size(); i++){
             if(l.get(i)!=p)return p;
