@@ -11,14 +11,10 @@ class Solution {
         System.out.println(l);
         Collections.sort(l);
         for(int i=0; i<l.size(); i++){
-            if(l.get(i)==p){
-                p++;
-            }else{
-                return p;
-            }             
+            if(l.get(i)!=p)return p;
+            p++;            
         }
         if(l.size()==0)return 1;
-        
         return l.get(l.size()-1)+1;
     }
 }
