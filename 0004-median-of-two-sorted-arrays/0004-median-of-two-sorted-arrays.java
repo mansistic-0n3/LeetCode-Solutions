@@ -6,8 +6,8 @@ class Solution {
         double sum=0;
         int a=0;
         int[] num=new int[m+n];
-         System.arraycopy(nums1, 0, num, 0, m);
-         System.arraycopy(nums2, 0, num, m, n);
+        System.arraycopy(nums1, 0, num, 0, m);
+        System.arraycopy(nums2, 0, num, m, n);
         Arrays.sort(num);
         if(num.length%2==0){
             a=num.length/2;
