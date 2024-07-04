@@ -42,23 +42,18 @@
 
 class Solution {
     public int numComponents(ListNode head, int[] nums) {
-        // Sort the nums array
         Arrays.sort(nums);
-
         int count = 0;
         boolean inComponent = false;
 
-        // Traverse the linked list
         ListNode current = head;
         while (current != null) {
             if (binarySearch(nums, current.val)) {
                 if (!inComponent) {
-                    // Start of a new component
                     count++;
                     inComponent = true;
                 }
             } else {
-                // End of a component
                 inComponent = false;
             }
             current = current.next;
@@ -67,7 +62,6 @@ class Solution {
         return count;
     }
 
-    // Helper method for binary search
     private boolean binarySearch(int[] nums, int target) {
         int left = 0, right = nums.length - 1;
         while (left <= right) {
