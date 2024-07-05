@@ -38,7 +38,7 @@ class Solution {
         
         if(carry>0){
             q.next=new ListNode(carry);
-                // q=q.next;
+            q=q.next;
         }
        return reverseLinkedList(res.next);
     }
