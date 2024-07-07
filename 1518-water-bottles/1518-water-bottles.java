@@ -4,9 +4,9 @@ class Solution {
         int empty=filled;
         int count=filled;
         while(empty>=numExchange) {
-             int newBottles = empty / numExchange;
-            count+=newBottles;
-            empty=(empty%numExchange)+newBottles;
+             filled = empty / numExchange;
+            count+=filled;
+            empty=(empty%numExchange)+filled;
         }
         return count;
     }
