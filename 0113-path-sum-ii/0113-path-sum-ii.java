@@ -27,14 +27,10 @@ class Solution {
                 sol.add(new ArrayList<>(arr));
             } 
         }else {
-            if (root.left != null) {
-                pathSum(root.left, targetSum);
-            }
-            if (root.right != null) {
-                pathSum(root.right, targetSum);
-            }
+            pathSum(root.left, targetSum);
+            pathSum(root.right, targetSum);
         }
-        arr.remove(arr.size()-1);              
+        arr.remove(arr.size()-1);             
         return sol;
     }
 }
