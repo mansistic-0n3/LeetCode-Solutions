@@ -17,7 +17,7 @@ class Solution {
         }
         while(nl>=0){
             if(nA[nl]=='1'){
-            res++;
+                res++;
             }
             nl--;
         }
