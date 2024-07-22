@@ -5,11 +5,7 @@ class Solution {
         while(x>=1 && y>=4){
             x-=1;
             y-=4;
-            if(flag==0){
-                flag=1;
-            }else{
-                flag=0;
-            }
+            flag = (flag == 0) ? 1 : 0;
         }
         return arr[flag];        
     }
