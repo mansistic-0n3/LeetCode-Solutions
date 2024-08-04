@@ -5,12 +5,11 @@ class Solution {
         for(int i=0; i<nums.length; i++){
             if(nums[i]<10){
                 singleSum+=nums[i];
-            }
-            if(nums[i]>=10){
+            }else{
                 doubleSum+=nums[i];
             }
         }
-        if (singleSum == doubleSum) return false;
-        return true;
+        if (singleSum > doubleSum || singleSum < doubleSum) return true;
+        return false;
     }
 }
