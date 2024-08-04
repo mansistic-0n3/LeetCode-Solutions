@@ -10,7 +10,7 @@ class Solution {
                 doubleSum+=nums[i];
             }
         }
-        if (singleSum > doubleSum || singleSum < doubleSum) return true;
-        return false;
+        if (singleSum == doubleSum) return false;
+        return true;
     }
 }
