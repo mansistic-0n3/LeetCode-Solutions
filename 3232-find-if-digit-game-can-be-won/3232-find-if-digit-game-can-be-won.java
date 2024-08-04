@@ -9,7 +9,6 @@ class Solution {
                 doubleSum+=nums[i];
             }
         }
-        if (singleSum > doubleSum || singleSum < doubleSum) return true;
-        return false;
+        return singleSum != doubleSum;
     }
 }
