@@ -8,9 +8,7 @@ class Solution {
         }
         for(int i=0; i<pattern.length(); i++){
             if(map.containsKey(pattern.charAt(i))){
-                String store=map.get(pattern.charAt(i));
-                if(!input[i].equals(store)){
-                System.out.println(store+" : "+input[i]);
+                if(!input[i].equals(map.get(pattern.charAt(i)))){
                     return false;
                 }
             }else{
