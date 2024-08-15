@@ -1,6 +1,5 @@
 class Solution {
     public boolean lemonadeChange(int[] bills) {
-        int count=0;
         Map<Integer, Integer> map= new HashMap();
         for(int i=0; i<bills.length; i++){
             if(bills[i]==5){
