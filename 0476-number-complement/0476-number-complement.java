@@ -10,7 +10,7 @@ class Solution {
                 res += '0';
             }
         }
-        int decimal = Integer.parseInt(res, 2);
-        return decimal;
+        // int decimal = Integer.parseInt(res, 2);
+        return Integer.parseInt(res, 2);
     }
 }
