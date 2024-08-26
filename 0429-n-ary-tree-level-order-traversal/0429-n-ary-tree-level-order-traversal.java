@@ -19,22 +19,22 @@ class Node {
 
 class Solution {
     public List<List<Integer>> levelOrder(Node root) {
-        List<List<Integer>> res = new ArrayList();
-        dfs(root, res, 0);
-        return res;
+        List<List<Integer>> ans = new ArrayList();
+        dfs(root, ans, 0);
+        return ans;
     }
     
-    private void dfs(Node root, List<List<Integer>> res, int level){
+    private void dfs(Node root, List<List<Integer>> ans, int level){
         if(root==null) return;
         
-        if(res.size()<=level){
-            res.add(new ArrayList<>());
+        if(ans.size()<=level){
+            ans.add(new ArrayList<>());
         }
         
-        res.get(level).add(root.val);
+        ans.get(level).add(root.val);
         
         for(Node child: root.children){
-            dfs(child, res, level+1);
+            dfs(child, ans, level+1);
         }
     }
 }
